@@ -29,6 +29,7 @@ applications:
                 rm -rf logs
             deploy: |
                 python manage.py migrate
+                python create_superuser.py
 
 services:
     db:

@@ -1,3 +1,5 @@
 # Требования для рабочего проекта.
 gunicorn
-psycopg2
+psycopg2-binary
+whitenoise
+dj-database-url

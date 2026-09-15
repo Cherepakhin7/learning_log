@@ -15,7 +15,6 @@ applications:
                     root: "static"
                     expires: 1h
                     allow: true
-        disk: 512
         mounts:
             "logs":
                 source: local
@@ -34,7 +33,6 @@ applications:
 services:
     db:
         type: postgresql:15
-        disk: 1024
 
 routes:
     "https://{default}/":
